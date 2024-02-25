@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/xkx-youcha/xkx-youcha.github.io.git -b gh-pages"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -16,6 +18,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
+    "gh-pages": "^6.1.1",
     "vite": "^5.0.11"
   }
 }
